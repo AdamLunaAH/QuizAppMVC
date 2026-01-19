@@ -1,0 +1,115 @@
+{
+    "quizTitle": "Molntjänster – Service Bus och övervaka appar",
+    "questions": [
+        {
+            "id": 1,
+            "questionText": "Vad är Azure Service Bus?",
+            "options": [
+                "En typ av virtuell maskin",
+                "En fullständigt hanterad meddelandetjänst (message broker) för att koppla ihop applikationer",
+                "En databastjänst",
+                "Ett utvecklingsverktyg"
+            ],
+            "correctAnswer": "En fullständigt hanterad meddelandetjänst (message broker) för att koppla ihop applikationer"
+        },
+        {
+            "id": 2,
+            "questionText": "Vad är fördelen med löst kopplade system (med Service Bus) jämfört med hårt kopplade system?",
+            "options": [
+                "Löst kopplade system är alltid billigare",
+                "Tjänster kan arbeta oberoende; om en tjänst är nere väntar meddelanden i kö",
+                "Hårt kopplade system är snabbare",
+                "Det finns ingen skillnad"
+            ],
+            "correctAnswer": "Tjänster kan arbeta oberoende; om en tjänst är nere väntar meddelanden i kö"
+        },
+        {
+            "id": 3,
+            "questionText": "Hur hjälper Service Bus med lastbalansering?",
+            "options": [
+                "Det gör systemen långsammare",
+                "Meddelanden fördelas automatiskt mellan flera workers för parallell bearbetning",
+                "Det kräver manuell konfiguration varje gång",
+                "Det fungerar inte för stora datamängder"
+            ],
+            "correctAnswer": "Meddelanden fördelas automatiskt mellan flera workers för parallell bearbetning"
+        },
+        {
+            "id": 4,
+            "questionText": "Vad är ett Service Bus Namespace?",
+            "options": [
+                "En typ av databas",
+                "En container för alla Service Bus-resurser (queues, topics) med egen connection string",
+                "Ett programmeringsspråk",
+                "En säkerhetsinställning"
+            ],
+            "correctAnswer": "En container för alla Service Bus-resurser (queues, topics) med egen connection string"
+        },
+        {
+            "id": 5,
+            "questionText": "Vad är skillnaden mellan en Queue och en Topic i Service Bus?",
+            "options": [
+                "Queue är för ett-till-ett meddelanden, Topic är för pub/sub (ett-till-många)",
+                "Topics är snabbare",
+                "Queues kan inte lagra meddelanden",
+                "Det finns ingen skillnad"
+            ],
+            "correctAnswer": "Queue är för ett-till-ett meddelanden, Topic är för pub/sub (ett-till-många)"
+        },
+        {
+            "id": 6,
+            "questionText": "Vilket NuGet-paket används för att arbeta med Service Bus i .NET?",
+            "options": [
+                "Microsoft.Azure.ServiceBus",
+                "Azure.Messaging.ServiceBus",
+                "System.ServiceBus",
+                "Azure.ServiceBus.Core"
+            ],
+            "correctAnswer": "Azure.Messaging.ServiceBus"
+        },
+        {
+            "id": 7,
+            "questionText": "Vilken klass används för att skicka meddelanden till en queue eller topic?",
+            "options": [
+                "ServiceBusReceiver",
+                "ServiceBusProcessor",
+                "ServiceBusSender",
+                "ServiceBusClient"
+            ],
+            "correctAnswer": "ServiceBusSender"
+        },
+        {
+            "id": 8,
+            "questionText": "Vad är Azure Monitor/Application Insights?",
+            "options": [
+                "En databastjänst",
+                "En central övervakningstjänst som samlar, analyserar och visualiserar telemetri",
+                "Ett utvecklingsverktyg",
+                "En typ av storage"
+            ],
+            "correctAnswer": "En central övervakningstjänst som samlar, analyserar och visualiserar telemetri"
+        },
+        {
+            "id": 9,
+            "questionText": "Vilka typer av data kan Application Insights samla in?",
+            "options": [
+                "Endast felmeddelanden",
+                "Requests, exceptions, traces, dependencies, performance metrics",
+                "Endast databasloggar",
+                "Endast HTTP-requests"
+            ],
+            "correctAnswer": "Requests, exceptions, traces, dependencies, performance metrics"
+        },
+        {
+            "id": 10,
+            "questionText": "Hur länge lagras data i Application Insights som standard?",
+            "options": [
+                "30 dagar",
+                "90 dagar (upp till 730 dagar utan extra kostnad)",
+                "1 år",
+                "För alltid"
+            ],
+            "correctAnswer": "90 dagar (upp till 730 dagar utan extra kostnad)"
+        }
+    ]
+}

@@ -1,0 +1,110 @@
+{
+    "quizTitle": "Molntjänster – Lagring och databaser",
+    "questions": [
+        {
+            "id": 1,
+            "questionText": "Vilka fem typer av lagringstjänster finns i Azure Storage?",
+            "options": [
+                "Blob, Files, Queues, Tables, Container Storage",
+                "SQL, NoSQL, Document, Graph, Key-Value",
+                "Local, Regional, Global, Premium, Standard",
+                "Primary, Secondary, Backup, Archive, Cache"
+            ],
+            "correctAnswer": "Blob, Files, Queues, Tables, Container Storage"
+        },
+        {
+            "id": 2,
+            "questionText": "Vad betyder LRS (Locally Redundant Storage)?",
+            "options": [
+                "Data replikeras över flera regioner",
+                "Data replikeras 3 gånger inom ett enda datacenter",
+                "Data replikeras över 3 tillgänglighetszoner",
+                "Data replikeras endast lokalt på din dator"
+            ],
+            "correctAnswer": "Data replikeras 3 gånger inom ett enda datacenter"
+        },
+        {
+            "id": 3,
+            "questionText": "Vilken redundansnivå ger högst skydd (16 nior durability) och replikerar data både inom zoner och till en sekundär region?",
+            "options": ["LRS", "ZRS", "GRS", "GZRS"],
+            "correctAnswer": "GZRS"
+        },
+        {
+            "id": 4,
+            "questionText": "Vad är skillnaden mellan GRS och RA-GRS?",
+            "options": [
+                "RA-GRS ger läsåtkomst till sekundär region även vid normal drift",
+                "GRS är billigare",
+                "RA-GRS replikerar till fler regioner",
+                "Det finns ingen skillnad"
+            ],
+            "correctAnswer": "RA-GRS ger läsåtkomst till sekundär region även vid normal drift"
+        },
+        {
+            "id": 5,
+            "questionText": "Vad används Azure Blob Storage till?",
+            "options": [
+                "Endast för databaser",
+                "För enorma mängder ostrukturerad data som bilder, video, audio och säkerhetskopior",
+                "För att köra virtuella maskiner",
+                "För att skicka e-post"
+            ],
+            "correctAnswer": "För enorma mängder ostrukturerad data som bilder, video, audio och säkerhetskopior"
+        },
+        {
+            "id": 6,
+            "questionText": "Hur ser strukturen ut i Azure Blob Storage?",
+            "options": [
+                "Storage Account → Container → Blob",
+                "Container → Storage Account → Blob",
+                "Blob → Container → Storage Account",
+                "Database → Table → Row"
+            ],
+            "correctAnswer": "Storage Account → Container → Blob"
+        },
+        {
+            "id": 7,
+            "questionText": "Vilka protokoll kan användas för att komma åt Azure Files?",
+            "options": [
+                "HTTP och FTP",
+                "SMB, NFS och Azure Files REST API",
+                "SSH och Telnet",
+                "SOAP och GraphQL"
+            ],
+            "correctAnswer": "SMB, NFS och Azure Files REST API"
+        },
+        {
+            "id": 8,
+            "questionText": "Vad är skillnaden mellan DTU och vCore i Azure SQL Database?",
+            "options": [
+                "DTU är en kombinerad resursmodell (paketpris), vCore ger separat kontroll över CPU och lagring",
+                "DTU är dyrare",
+                "vCore är endast för testmiljöer",
+                "Det finns ingen skillnad"
+            ],
+            "correctAnswer": "DTU är en kombinerad resursmodell (paketpris), vCore ger separat kontroll över CPU och lagring"
+        },
+        {
+            "id": 9,
+            "questionText": "Hur ofta skapar Azure SQL Database automatiska säkerhetskopior?",
+            "options": [
+                "Fullständiga kopior varje dag, skillnader varje timme, transaktioner varje minut",
+                "Fullständiga kopior varje vecka, skillnader varje dag, transaktioner varje 10:e minut",
+                "Endast manuella backuper",
+                "En gång per månad"
+            ],
+            "correctAnswer": "Fullständiga kopior varje vecka, skillnader varje dag, transaktioner varje 10:e minut"
+        },
+        {
+            "id": 10,
+            "questionText": "Vad är ett användningsfall för Azure Files?",
+            "options": [
+                "Köra operativsystem",
+                "Ersätta lokala filservrar och ge beständig fillagring till containers",
+                "Skicka e-post",
+                "Kompilera kod"
+            ],
+            "correctAnswer": "Ersätta lokala filservrar och ge beständig fillagring till containers"
+        }
+    ]
+}

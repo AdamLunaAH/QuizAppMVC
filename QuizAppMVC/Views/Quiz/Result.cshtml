@@ -1,0 +1,40 @@
+@model QuizApp.ViewModels.Quiz.QuizResultViewModel
+
+<h1>@Model.QuizTitle</h1>
+
+<h3>
+    Result: @Model.CorrectAnswers / @Model.TotalQuestions
+</h3>
+
+<hr />
+
+@foreach (var result in Model.Results)
+{
+    <div class="mb-4">
+        <h5>
+            @result.DisplayOrder. @result.QuestionText
+        </h5>
+
+        <p>
+            Your answer:
+            <strong class="@(result.IsCorrect ? "text-success" : "text-danger")">
+                @(result.SelectedAnswer ?? "No answer")
+            </strong>
+        </p>
+
+        @if (!result.IsCorrect)
+        {
+            <p>
+                Correct answer:
+                <strong class="text-success">
+                    @result.CorrectAnswer
+                </strong>
+            </p>
+        }
+    </div>
+
+    <a class="btn btn-secondary" asp-controller="Quiz" asp-action="Index"
+        asp-route-quizId="@Context.Request.Form["quizId"]">
+        Retry this quiz
+    </a>
+}

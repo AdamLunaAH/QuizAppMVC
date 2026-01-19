@@ -1,0 +1,115 @@
+{
+    "quizTitle": "Molntjänster – Grundläggande kunskap",
+    "questions": [
+        {
+            "id": 1,
+            "questionText": "Vilka är de tre huvudsakliga molntjänstmodellerna som diskuteras i kursen?",
+            "options": [
+                "IaaS, PaaS, DaaS",
+                "IaaS, PaaS, SaaS",
+                "SaaS, BaaS, FaaS",
+                "PaaS, NaaS, CaaS"
+            ],
+            "correctAnswer": "IaaS, PaaS, SaaS"
+        },
+        {
+            "id": 2,
+            "questionText": "Vad är Azure enligt kursmaterialet?",
+            "options": [
+                "Ett operativsystem för servrar",
+                "En programmeringsspråk",
+                "En leverantör av datakraft, lagring och mjukvara via datahallar världen över",
+                "Ett utvecklingsverktyg för .NET"
+            ],
+            "correctAnswer": "En leverantör av datakraft, lagring och mjukvara via datahallar världen över"
+        },
+        {
+            "id": 3,
+            "questionText": "Vilken av följande är INTE en fördel med molnet jämfört med OnPrem?",
+            "options": [
+                "Skalbarhet",
+                "Full kontroll över hårdvara",
+                "Betala för använd datakraft",
+                "Automatiska uppdateringar"
+            ],
+            "correctAnswer": "Full kontroll över hårdvara"
+        },
+        {
+            "id": 4,
+            "questionText": "I IaaS (Infrastructure as a Service), vem ansvarar för mjukvaruuppdateringar och konfigurering?",
+            "options": [
+                "Molnleverantören ansvarar för allt",
+                "Kunden ansvarar för mjukvara, uppdateringar, installation och säkerhet",
+                "Det är delat ansvar mellan kund och leverantör",
+                "Ingen behöver göra uppdateringar"
+            ],
+            "correctAnswer": "Kunden ansvarar för mjukvara, uppdateringar, installation och säkerhet"
+        },
+        {
+            "id": 5,
+            "questionText": "Vilket av följande är ett exempel på PaaS (Platform as a Service)?",
+            "options": [
+                "Virtuell maskin",
+                "Azure Storage",
+                "App Service och Azure SQL Database",
+                "Google Drive"
+            ],
+            "correctAnswer": "App Service och Azure SQL Database"
+        },
+        {
+            "id": 6,
+            "questionText": "Vad kännetecknar SaaS (Software as a Service)?",
+            "options": [
+                "Kunden installerar mjukvaran lokalt",
+                "Prenumerationsmodell där en instans servar alla kunder via internet",
+                "Kunden måste hantera operativsystemet",
+                "Endast tillgängligt för företag"
+            ],
+            "correctAnswer": "Prenumerationsmodell där en instans servar alla kunder via internet"
+        },
+        {
+            "id": 7,
+            "questionText": "Vad är en Hybrid-lösning i molnsammanhang?",
+            "options": [
+                "En blandning av olika programmeringsspråk",
+                "En kombination av OnPrem och molntjänster",
+                "Att använda flera molnleverantörer",
+                "En typ av virtuell maskin"
+            ],
+            "correctAnswer": "En kombination av OnPrem och molntjänster"
+        },
+        {
+            "id": 8,
+            "questionText": "Vilka är de tre huvudkategorierna av Azure-tjänster som nämns?",
+            "options": [
+                "Software, Hardware, Network",
+                "Compute, Storage, Network",
+                "Database, Analytics, Security",
+                "Development, Testing, Production"
+            ],
+            "correctAnswer": "Compute, Storage, Network"
+        },
+        {
+            "id": 9,
+            "questionText": "Vad är App Service i Azure?",
+            "options": [
+                "En mobilapp för att hantera Azure-resurser",
+                "En PaaS-tjänst för att hosta webbappar och API:er",
+                "Ett utvecklingsverktyg",
+                "En databastjänst"
+            ],
+            "correctAnswer": "En PaaS-tjänst för att hosta webbappar och API:er"
+        },
+        {
+            "id": 10,
+            "questionText": "Var kan du lagra miljövariabler (som connection strings och API-nycklar) i App Service?",
+            "options": [
+                "Direkt i koden",
+                "I Git-repositoryt",
+                "I Application Settings/Environment Variables",
+                "I en textfil på servern"
+            ],
+            "correctAnswer": "I Application Settings/Environment Variables"
+        }
+    ]
+}

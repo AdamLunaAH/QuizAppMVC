@@ -1,0 +1,36 @@
+@model QuizApp.ViewModels.Quiz.QuizViewModel
+
+<h1>@Model.QuizTitle</h1>
+
+<form method="post">
+    @Html.AntiForgeryToken()
+
+    <input type="hidden" name="quizId" value="@Model.QuizId" />
+
+    @foreach (var question in Model.Questions)
+    {
+        <div class="mb-4">
+            <h5>
+                @question.DisplayOrder. @question.QuestionText
+            </h5>
+
+            <input type="hidden" name="displayOrder[@question.Id]" value="@question.DisplayOrder" />
+
+            @foreach (var option in question.Options)
+            {
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="answers[@question.Id]" value="@option"
+                        id="@($"{question.Id}_{option}")" />
+
+                    <label class="form-check-label" for="@($"{question.Id}_{option}")">
+                        @option
+                    </label>
+                </div>
+            }
+        </div>
+    }
+
+    <button type="submit" class="btn btn-primary">
+        Submit Quiz
+    </button>
+</form>

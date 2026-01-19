@@ -1,0 +1,110 @@
+{
+    "quizTitle": "Molntjänster – Funktioner & Credentials Hantering",
+    "questions": [
+        {
+            "id": 1,
+            "questionText": "Vad är Azure Functions?",
+            "options": [
+                "En databastjänst",
+                "Serverless-funktioner (kod) som körs vid en trigger",
+                "Ett operativsystem",
+                "Ett utvecklingsverktyg"
+            ],
+            "correctAnswer": "Serverless-funktioner (kod) som körs vid en trigger"
+        },
+        {
+            "id": 2,
+            "questionText": "Vilket av följande är INTE en trigger för Azure Functions?",
+            "options": [
+                "HTTP Trigger",
+                "Timer Trigger",
+                "Database Trigger",
+                "Blob Trigger"
+            ],
+            "correctAnswer": "Database Trigger"
+        },
+        {
+            "id": 3,
+            "questionText": "Vad är en Function App?",
+            "options": [
+                "En enskild funktion",
+                "En container för flera Azure Functions som delar konfiguration",
+                "Ett mobilgränssnitt",
+                "En databas"
+            ],
+            "correctAnswer": "En container för flera Azure Functions som delar konfiguration"
+        },
+        {
+            "id": 4,
+            "questionText": "Vad är en Binding i Azure Functions?",
+            "options": [
+                "En säkerhetsregel",
+                "Ett sätt att integrera med andra tjänster utan att skriva connection-kod",
+                "En typ av trigger",
+                "En programmeringsstil"
+            ],
+            "correctAnswer": "Ett sätt att integrera med andra tjänster utan att skriva connection-kod"
+        },
+        {
+            "id": 5,
+            "questionText": "Vilken prisplan för Azure Functions har coldstart och max timeout på 10 minuter?",
+            "options": ["Premium", "Dedicated", "Consumption", "Enterprise"],
+            "correctAnswer": "Consumption"
+        },
+        {
+            "id": 6,
+            "questionText": "Vad är skillnaden mellan \"Function\" och \"Anonymous\" authorization i Azure Functions?",
+            "options": [
+                "Anonymous kräver ingen autentisering, Function kräver function keys",
+                "Function är alltid gratis",
+                "Anonymous är säkrare",
+                "Det finns ingen skillnad"
+            ],
+            "correctAnswer": "Anonymous kräver ingen autentisering, Function kräver function keys"
+        },
+        {
+            "id": 7,
+            "questionText": "Vad lagras i App Service Configuration/Application Settings?",
+            "options": [
+                "Källkoden",
+                "Miljövariabler som connection strings, API-nycklar och miljöspecifika värden",
+                "Användarnas lösenord",
+                "Bilder och filer"
+            ],
+            "correctAnswer": "Miljövariabler som connection strings, API-nycklar och miljöspecifika värden"
+        },
+        {
+            "id": 8,
+            "questionText": "I vilken ordning läser .NET Configuration Manager källorna? (första till sista)",
+            "options": [
+                "Environment Variables → appsettings.json → User Secrets",
+                "appsettings.json → appsettings.{Environment}.json → User Secrets → Environment Variables",
+                "User Secrets → appsettings.json → Environment Variables",
+                "Alla läses samtidigt"
+            ],
+            "correctAnswer": "appsettings.json → appsettings.{Environment}.json → User Secrets → Environment Variables"
+        },
+        {
+            "id": 9,
+            "questionText": "Vad är Azure Key Vault?",
+            "options": [
+                "En databas för användardata",
+                "Ett säkert valv för att lagra secrets, keys och certificates",
+                "Ett backup-verktyg",
+                "En typ av storage account"
+            ],
+            "correctAnswer": "Ett säkert valv för att lagra secrets, keys och certificates"
+        },
+        {
+            "id": 10,
+            "questionText": "Vilka tre typer av data kan lagras i Key Vault?",
+            "options": [
+                "Images, Videos, Documents",
+                "Secrets, Keys, Certificates",
+                "Users, Groups, Roles",
+                "Tables, Queues, Blobs"
+            ],
+            "correctAnswer": "Secrets, Keys, Certificates"
+        }
+    ]
+}
