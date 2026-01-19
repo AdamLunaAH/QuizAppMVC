@@ -6,12 +6,6 @@ using QuizAppMVC.Models;
 
 namespace QuizApp.Controllers;
 
-public static class EnumerableExtensions
-{
-    public static List<T> Shuffle<T>(this IEnumerable<T> source)
-        => source.OrderBy(_ => Random.Shared.Next()).ToList();
-}
-
 public class QuizController : Controller
 {
     private readonly IQuizService _quizService;
@@ -70,6 +64,9 @@ public class QuizController : Controller
             TempData["ErrorMessage"] = $"Quiz {quizId} not found.";
             return RedirectToAction("Error", "Home");
         }
+
+        answers ??= new Dictionary<int, string>();
+        displayOrder ??= new Dictionary<int, int>();
 
         var resultViewModel = new QuizResultViewModel
         {
