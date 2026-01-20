@@ -1,0 +1,137 @@
+{
+  "quizTitle": "Molntjänster – Deploy och containers",
+  "questions": [
+    {
+      "id": 1,
+      "questionText": "Vad är en Pipeline i sammanhanget av deployment?",
+      "options": [
+        "En fysisk kabel som kopplar servrar",
+        "Scriptkod (YAML) som utför flera steg från kod till applikation",
+        "Ett grafiskt gränssnitt för att hantera databaser",
+        "En typ av Azure-tjänst för filöverföring"
+      ],
+      "correctAnswer": "Scriptkod (YAML) som utför flera steg från kod till applikation"
+    },
+    {
+      "id": 2,
+      "questionText": "Vad står CI för i CI/CD?",
+      "options": [
+        "Container Integration",
+        "Cloud Infrastructure",
+        "Continuous Integration",
+        "Code Implementation"
+      ],
+      "correctAnswer": "Continuous Integration"
+    },
+    {
+      "id": 3,
+      "questionText": "Vilken typ av innehåll kan Static Web Apps hosta??",
+      "options": [
+        "Endast HTML",
+        "HTML, CSS, Javascript och bilder",
+        "Endast serverbaserade .NET-applikationer",
+        "Endast databasfiler"
+      ],
+      "correctAnswer": "HTML, CSS, Javascript och bilder"
+    },
+    {
+      "id": 4,
+      "questionText": "Vad är Deployment Slots?",
+      "options": [
+        "Fysiska serverrack i Azure datacenter",
+        "Kopior av din app med olika syften",
+        "En typ av databaskoppling",
+        "Säkerhetsprotokoll för HTTPS"
+      ],
+      "correctAnswer": "Kopior av din app med olika syften"
+    },
+    {
+      "id": 5,
+      "questionText": "Vad är en Container?",
+      "options": [
+        "En fysisk server i molnet",
+        "En paketerad enhet mjukvara med alla dess beroenden",
+        "Ett programmeringsspråk",
+        "En typ av databas"
+      ],
+      "correctAnswer": "App Service och Azure SQL Database"
+    },
+    {
+      "id": 6,
+      "questionText": "Vilket problem löser containers framför allt?",
+      "options": [
+        "\"Det fungerar på min maskin\"-problemet",
+        "Brist på lagringsutrymme",
+        "Långsam internetanslutning",
+        "Databaskonflikter"
+      ],
+      "correctAnswer": "\"Det fungerar på min maskin\"-problemet"
+    },
+    {
+      "id": 7,
+      "questionText": "Vad är skillnaden mellan en Docker Image och en Container?",
+      "options": [
+        "Det finns ingen skillnad, de är samma sak",
+        "Image är en mall/blueprint, Container är en körande instans",
+        "Container är en mall, Image är körande",
+        "Images används endast för databaser"
+      ],
+      "correctAnswer": "Image är en mall/blueprint, Container är en körande instans"
+    },
+    {
+      "id": 8,
+      "questionText": "Vad är en Dockerfile?",
+      "options": [
+        "En loggfil som Docker skapar",
+        "En konfigurationsfil för databaser",
+        "Bygginstruktioner för hur en image ska skapas",
+        "Ett grafiskt verktyg för Docker"
+      ],
+      "correctAnswer": "Bygginstruktioner för hur en image ska skapas"
+    },
+    {
+      "id": 9,
+      "questionText": "Vilken Azure-tjänst används för att köra enstaka containers direkt utan klusterhantering?",
+      "options": [
+        "Azure Kubernetes Service (AKS)",
+        "Azure Container Instances (ACI)",
+        "Azure App Service",
+        "Azure Functions"
+      ],
+      "correctAnswer": "Azure Container Instances (ACI)"
+    },
+    {
+      "id": 10,
+      "questionText": "Vad är Azure Container Registry (ACR)?",
+      "options": [
+        "En tjänst för att köra containers",
+        "Ett register för att bygga, lagra och versionshantera container images",
+        "En databastjänst",
+        "Ett verktyg för att övervaka containers"
+      ],
+      "correctAnswer": "Ett register för att bygga, lagra och versionshantera container images"
+    },
+    {
+      "id": 11,
+      "questionText": "Varför ska man använda minimala bas-images som Alpine?",
+      "options": [
+        "De är gratis (andra kostar pengar)",
+        "Mindre images = snabbare deployment och mindre attack surface",
+        "De har bättre prestanda",
+        "De stöder fler programmeringsspråk"
+      ],
+      "correctAnswer": "Mindre images = snabbare deployment och mindre attack surface"
+    },
+    {
+      "id": 12,
+      "questionText": "Varför ska man INTE lagra data direkt i en container?",
+      "options": [
+        "Det är för långsamt",
+        "Containers kan dö och återuppstå - data försvinner",
+        "Det är för dyrt",
+        "Azure tillåter det inte"
+      ],
+      "correctAnswer": "Containers kan dö och återuppstå - data försvinner"
+    }
+  ]
+}
