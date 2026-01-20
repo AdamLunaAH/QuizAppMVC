@@ -45,17 +45,17 @@
             ],
             "correctAnswer": "Kopior av din app med olika syften"
         },
-        {
-            "id": 5,
-            "questionText": "Vad är en Container?",
-            "options": [
-                "En fysisk server i molnet",
-                "En paketerad enhet mjukvara med alla dess beroenden",
-                "Ett programmeringsspråk",
-                "En typ av databas"
-            ],
-            "correctAnswer": "App Service och Azure SQL Database"
-        },
+      {
+        "id": 5,
+        "questionText": "Vad är en Container?",
+        "options": [
+          "En fysisk server i molnet",
+          "En paketerad enhet mjukvara med alla dess beroenden",
+          "Ett programmeringsspråk",
+          "En typ av databas"
+        ],
+        "correctAnswer": "En paketerad enhet mjukvara med alla dess beroenden"
+      },
         {
             "id": 6,
             "questionText": "Vilket problem löser containers framför allt?",
